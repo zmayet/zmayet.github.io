@@ -1,0 +1,235 @@
+
+
+/* Update header background and text color */
+header.masthead {
+    background-color: #fdf1f3; /* Light pastel pink */
+    color: #fafafa; /* Soft coral pink */
+}
+
+/* Update section background color */
+section {
+    background-color: #fef3e8; /* Light peach pastel */
+}
+
+/* Update button colors */
+.btn-primary {
+    background-color: #cb90f8; /* Light pink pastel */
+    border:none;
+    color: #fff; /* White text */
+    --bs-btn-hover-bg: #e5c1fc;
+    --bs-btn-hover-border-color: #212529;
+    --bs-btn-active-bg: #573078;
+}
+
+/* Update link color */
+a {
+    color: #fff3f3;
+}
+
+/* Update hover effects for links */
+a:hover {
+    color: #ffdee2;
+}
+
+/* Update footer background and text color */
+footer {
+    background-color: #fdf1f3;
+    color: #ff85a2;
+}
+
+/* Add padding to sections for spacing */
+section {
+    padding: 80px 0;
+}
+
+
+
+#mainNav.navbar-shrink {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    background-color: #383838;
+}
+
+#portfolio .portfolio-item .portfolio-link .portfolio-hover {
+    display: flex;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgb(230, 195, 255);
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity ease-in-out 0.25s;
+}
+
+/*#mainNav {*/
+/*    padding-top: 1rem;*/
+/*    padding-bottom: 1rem;*/
+/*    background-color: #21252900;*/
+/*}*/
+
+#mainNav .navbar-nav .nav-item .nav-link.active, #mainNav .navbar-nav .nav-item .nav-link:hover {
+    color: #ffd7db;
+}
+
+
+/* Theme switch */
+.theme-switch {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.theme-toggle {
+    display: none;
+}
+
+.theme-switch-label {
+    width: 50px;
+    height: 26px;
+    background-color: #9d4949;
+    border-radius: 30px;
+    position: relative;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.theme-switch-label::before {
+    content: '';
+    width: 22px;
+    height: 22px;
+    background-color: #a237f8; /* Default purple color */
+    border-radius: 50%;
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    transition: transform 0.3s;
+}
+
+/* Light Mode */
+body:not(.dark-mode) .theme-switch-label::before {
+    background-color: #ffc390; /* Sunset orange color */
+}
+
+body.dark-mode .theme-switch-label {
+    width: 50px;
+    height: 26px;
+    background-color: #222;
+    border-radius: 30px;
+    position: relative;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.theme-toggle:checked + .theme-switch-label {
+    background-color: #333;
+}
+
+.theme-toggle:checked + .theme-switch-label::before {
+    transform: translateX(24px);
+}
+
+
+/* Dark Theme Styles */
+body.dark-mode {
+    background-color: #222; /* Dark background color */
+    color: #fff; /* Dark text color */
+}
+
+/* Dark Mode */
+body.dark-mode header.masthead {
+    background-image: url("images/Dark2.png");
+    color: #ffffff; /* White text color */
+}
+
+/* Dark Mode */
+body.dark-mode .btn-primary {
+    background-color: #573078; /* Dark purple background */
+    border: none;
+    color: #fff; /* White text */
+    --bs-btn-hover-bg: #3b206d; /* Darker purple hover background */
+    --bs-btn-hover-border-color: #fff; /* White hover border */
+    --bs-btn-active-bg: #cb90f8; /* Light pink pastel active background */
+}
+
+/*---------------------------------------------------------------*/
+
+/* Dark Mode - Update link color */
+body.dark-mode a {
+    color: #cb90f8; /* Light pink pastel */
+}
+
+/* Dark Mode - Update hover effects for links */
+body.dark-mode a:hover {
+    color: #e5c1fc; /* Lighter pink hover color */
+}
+
+/* Dark Mode - Update footer background and text color */
+body.dark-mode footer {
+    background-color: #111; /* Dark background color */
+    color: #cb90f8; /* Light pink text color */
+}
+
+/* Dark Mode - Add padding to sections for spacing */
+body.dark-mode section {
+    padding: 80px 0;
+}
+
+/* Dark Mode - Update navbar when scrolled */
+body.dark-mode #mainNav.navbar-shrink {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    background-color: #131313; /* Darker background color */
+}
+
+/* Dark Mode - Update portfolio item hover background */
+body.dark-mode #portfolio .portfolio-item .portfolio-link .portfolio-hover {
+    background: #222; /* Darker background color */
+}
+
+/* Dark Mode - Update active and hover link color in navbar */
+body.dark-mode #mainNav .navbar-nav .nav-item .nav-link.active,
+body.dark-mode #mainNav .navbar-nav .nav-item .nav-link:hover {
+    color: #b23bff; /* Lighter pink hover color */
+}
+
+/* Update section background color */
+body.dark-mode section {
+    background-color: #414141; /* Light peach pastel */
+}
+
+body.dark-mode #portfolio .portfolio-item .portfolio-caption {
+    padding: 1.5rem;
+    text-align: center;
+    background-color: #515151;
+}
+
+body.dark-mode .modal-content {
+
+    background-color: #232323;
+}
+
+body.dark-mode section#contact {
+    background-color: #212529;
+    background-image: url("images/map-image.png");
+    background-repeat: no-repeat;
+    background-position: center;
+}
+section#contact {
+    background-color: #212529;
+    background-image: url("images/map-image-l.png");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  header.masthead {
+    padding-top: 10.5rem;
+    padding-bottom: 6rem;
+    text-align: center;
+    color: #fff;
+    background-image: url("images/Pastel2.png");
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-position: center center;
+    background-size: cover;
+  }
